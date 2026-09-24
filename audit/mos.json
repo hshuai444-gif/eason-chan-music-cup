@@ -1,0 +1,245 @@
+[
+  {
+    "songId": "moving-on-stage-d1-t1",
+    "title": "Overture",
+    "albumDuration": 43.293,
+    "previewAt": 1.442,
+    "correlation": 0.94331,
+    "clipStart": 0,
+    "clipEnd": 45
+  },
+  {
+    "songId": "moving-on-stage-d1-t2",
+    "title": "白玫瑰",
+    "albumDuration": 235.8,
+    "previewAt": 89.726,
+    "correlation": 0.93567,
+    "clipStart": 45,
+    "clipEnd": 281
+  },
+  {
+    "songId": "moving-on-stage-d1-t3",
+    "title": "信心花舍",
+    "albumDuration": 212.76,
+    "previewAt": 325.539,
+    "correlation": 0.95745,
+    "clipStart": 281,
+    "clipEnd": 493
+  },
+  {
+    "songId": "moving-on-stage-d1-t4",
+    "title": "K歌之王",
+    "albumDuration": 277.213,
+    "previewAt": 538.312,
+    "correlation": 0.80029,
+    "clipStart": 493,
+    "clipEnd": 791
+  },
+  {
+    "songId": "moving-on-stage-d1-t5",
+    "title": "裙下之臣",
+    "albumDuration": 270.627,
+    "previewAt": 830.357,
+    "correlation": 0.87981,
+    "clipStart": 791,
+    "clipEnd": 1061
+  },
+  {
+    "songId": "moving-on-stage-d1-t6",
+    "title": "富士山下",
+    "albumDuration": 267.96,
+    "previewAt": 1100.997,
+    "correlation": 0.85292,
+    "clipStart": 1061,
+    "clipEnd": 1324
+  },
+  {
+    "songId": "moving-on-stage-d1-t7",
+    "title": "不如不見",
+    "albumDuration": 257.147,
+    "previewAt": 1368.97,
+    "correlation": 0.93804,
+    "clipStart": 1324,
+    "clipEnd": 1581
+  },
+  {
+    "songId": "moving-on-stage-d1-t8",
+    "title": "夕陽無限好",
+    "albumDuration": 241.48,
+    "previewAt": 1626.13,
+    "correlation": 0.94465,
+    "clipStart": 1581,
+    "clipEnd": 1824
+  },
+  {
+    "songId": "moving-on-stage-d1-t9",
+    "title": "人車誌",
+    "albumDuration": 248.24,
+    "previewAt": 1867.624,
+    "correlation": 0.95357,
+    "clipStart": 1824,
+    "clipEnd": 2070
+  },
+  {
+    "songId": "moving-on-stage-d1-t10",
+    "title": "馬利奧派對",
+    "albumDuration": 288.053,
+    "previewAt": 2115.876,
+    "correlation": 0.80918,
+    "clipStart": 2070,
+    "clipEnd": 2451
+  },
+  {
+    "songId": "moving-on-stage-d1-t11",
+    "title": "最佳損友",
+    "albumDuration": 245.32,
+    "previewAt": 2522.918,
+    "correlation": 0.92961,
+    "clipStart": 2451,
+    "clipEnd": 2724
+  },
+  {
+    "songId": "moving-on-stage-d1-t12",
+    "title": "What a Wonderful World",
+    "albumDuration": 164.307,
+    "previewAt": 2768.25,
+    "correlation": 0.72936,
+    "clipStart": 2724,
+    "clipEnd": 2889
+  },
+  {
+    "songId": "moving-on-stage-d1-t14",
+    "title": "黑擇明",
+    "albumDuration": 231.573,
+    "previewAt": 3207.504,
+    "correlation": 0.96839,
+    "clipStart": 3162,
+    "clipEnd": 3397
+  },
+  {
+    "songId": "moving-on-stage-d2-t2",
+    "title": "熱島小夜曲",
+    "albumDuration": 175.92,
+    "previewAt": 3697.549,
+    "correlation": 0.87637,
+    "clipStart": 3652,
+    "clipEnd": 3829
+  },
+  {
+    "songId": "moving-on-stage-d2-t3",
+    "title": "Crying in the Party",
+    "albumDuration": 277.053,
+    "previewAt": 3873.482,
+    "correlation": 0.88551,
+    "clipStart": 3829,
+    "clipEnd": 4085
+  },
+  {
+    "songId": "moving-on-stage-d2-t4",
+    "title": "我不好愛",
+    "albumDuration": 324.213,
+    "previewAt": 4150.549,
+    "correlation": 0.8906,
+    "clipStart": 4085,
+    "clipEnd": 4426
+  },
+  {
+    "songId": "moving-on-stage-d2-t5",
+    "title": "打回原形",
+    "albumDuration": 244.28,
+    "previewAt": 4474.776,
+    "correlation": 0.97403,
+    "clipStart": 4426,
+    "clipEnd": 4675
+  },
+  {
+    "songId": "moving-on-stage-d2-t6",
+    "title": "衝口而出",
+    "albumDuration": 253.747,
+    "previewAt": 4719.069,
+    "correlation": 0.91291,
+    "clipStart": 4675,
+    "clipEnd": 4928
+  },
+  {
+    "songId": "moving-on-stage-d2-t7",
+    "title": "月球上的人",
+    "albumDuration": 298.627,
+    "previewAt": 4972.829,
+    "correlation": 0.84206,
+    "clipStart": 4928,
+    "clipEnd": 5229
+  },
+  {
+    "songId": "moving-on-stage-d2-t8",
+    "title": "葡萄成熟時",
+    "albumDuration": 279.293,
+    "previewAt": 5271.469,
+    "correlation": 0.86594,
+    "clipStart": 5229,
+    "clipEnd": 5508
+  },
+  {
+    "songId": "moving-on-stage-d2-t9",
+    "title": "浮誇",
+    "albumDuration": 293.613,
+    "previewAt": 5550.776,
+    "correlation": 0.9686,
+    "clipStart": 5508,
+    "clipEnd": 5799
+  },
+  {
+    "songId": "moving-on-stage-d2-t10",
+    "title": "低等動物",
+    "albumDuration": 683.893,
+    "previewAt": 5844.402,
+    "correlation": 0.93758,
+    "clipStart": 5799,
+    "clipEnd": 6485
+  },
+  {
+    "songId": "moving-on-stage-d2-t11",
+    "title": "粵語殘片",
+    "albumDuration": 277.16,
+    "previewAt": 6528.309,
+    "correlation": 0.85926,
+    "clipStart": 6485,
+    "clipEnd": 6763
+  },
+  {
+    "songId": "moving-on-stage-d3-t1",
+    "title": "淘汰",
+    "albumDuration": 531.067,
+    "previewAt": 6807.744,
+    "correlation": 0.97316,
+    "clipStart": 6763,
+    "clipEnd": 7292
+  },
+  {
+    "songId": "moving-on-stage-d3-t3",
+    "title": "落花流水",
+    "albumDuration": 265.8,
+    "previewAt": 7598.718,
+    "correlation": 0.88234,
+    "clipStart": 7554,
+    "clipEnd": 7820
+  },
+  {
+    "songId": "moving-on-stage-d3-t5",
+    "title": "演唱會",
+    "albumDuration": 296.493,
+    "previewAt": 8067.238,
+    "correlation": 0.91528,
+    "clipStart": 8022,
+    "clipEnd": 8322
+  },
+  {
+    "songId": "moving-on-stage-d3-t8",
+    "title": "明年今日",
+    "albumDuration": 234.867,
+    "previewAt": 8900.384,
+    "correlation": 0.95739,
+    "clipStart": 8855,
+    "clipEnd": 9193.771
+  }
+]

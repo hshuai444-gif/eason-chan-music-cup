@@ -1,0 +1,281 @@
+[
+  {
+    "songId": "fear-and-dreams-d1-t1",
+    "title": "mozart’s requiem in d minor",
+    "albumDuration": 162.977,
+    "previewAt": 122.805,
+    "correlation": 0.93713,
+    "clipStart": 0,
+    "clipEnd": 240.782
+  },
+  {
+    "songId": "fear-and-dreams-d1-t2",
+    "title": "2001太空漫遊",
+    "albumDuration": 239.767,
+    "previewAt": 344.784,
+    "correlation": 0.8004,
+    "clipStart": 240.782,
+    "clipEnd": 480.549
+  },
+  {
+    "songId": "fear-and-dreams-d1-t3",
+    "title": "人神鬥",
+    "albumDuration": 304.467,
+    "previewAt": 511.548,
+    "correlation": 0.78652,
+    "clipStart": 480.549,
+    "clipEnd": 785.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t4",
+    "title": "當這地球沒有花",
+    "albumDuration": 243,
+    "previewAt": 872.021,
+    "correlation": 0.86231,
+    "clipStart": 785.016,
+    "clipEnd": 1028.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t5",
+    "title": "謊言",
+    "albumDuration": 251.667,
+    "previewAt": 1048.032,
+    "correlation": 0.75026,
+    "clipStart": 1028.016,
+    "clipEnd": 1279.683
+  },
+  {
+    "songId": "fear-and-dreams-d1-t6",
+    "title": "時代巨輪",
+    "albumDuration": 221.8,
+    "previewAt": 1286.695,
+    "correlation": 0.74988,
+    "clipStart": 1279.683,
+    "clipEnd": 1501.483
+  },
+  {
+    "songId": "fear-and-dreams-d1-t7",
+    "title": "想聽",
+    "albumDuration": 220.533,
+    "previewAt": 1557.489,
+    "correlation": 0.90665,
+    "clipStart": 1501.483,
+    "clipEnd": 1722.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t8",
+    "title": "黑洞",
+    "albumDuration": 222,
+    "previewAt": 1732.023,
+    "correlation": 0.88878,
+    "clipStart": 1722.016,
+    "clipEnd": 1944.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t9",
+    "title": "龍舌蘭",
+    "albumDuration": 288.333,
+    "previewAt": 2017.019,
+    "correlation": 0.76687,
+    "clipStart": 1944.016,
+    "clipEnd": 2232.349
+  },
+  {
+    "songId": "fear-and-dreams-d1-t10",
+    "title": "異夢",
+    "albumDuration": 227.667,
+    "previewAt": 2308.348,
+    "correlation": 0.81132,
+    "clipStart": 2232.349,
+    "clipEnd": 2460.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t11",
+    "title": "如果這一秒鐘你跟我講你不愛我",
+    "albumDuration": 253.333,
+    "previewAt": 2499.025,
+    "correlation": 0.75865,
+    "clipStart": 2460.016,
+    "clipEnd": 2713.349
+  },
+  {
+    "songId": "fear-and-dreams-d1-t12",
+    "title": "黑夜不再來",
+    "albumDuration": 333.667,
+    "previewAt": 2824.364,
+    "correlation": 0.85074,
+    "clipStart": 2713.349,
+    "clipEnd": 3047.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t13",
+    "title": "開不了心",
+    "albumDuration": 305,
+    "previewAt": 3062.016,
+    "correlation": 0.74894,
+    "clipStart": 3047.016,
+    "clipEnd": 3352.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t14",
+    "title": "告別娑婆",
+    "albumDuration": 266,
+    "previewAt": 3411.018,
+    "correlation": 0.90384,
+    "clipStart": 3352.016,
+    "clipEnd": 3618.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t15",
+    "title": "完",
+    "albumDuration": 264,
+    "previewAt": 3639.029,
+    "correlation": 0.88867,
+    "clipStart": 3618.016,
+    "clipEnd": 3882.016
+  },
+  {
+    "songId": "fear-and-dreams-d1-t16",
+    "title": "今日",
+    "albumDuration": 332,
+    "previewAt": 3924.02,
+    "correlation": 0.94036,
+    "clipStart": 3882.016,
+    "clipEnd": 4214.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t1",
+    "title": "夢的可能",
+    "albumDuration": 260,
+    "previewAt": 4269.023,
+    "correlation": 0.80511,
+    "clipStart": 4214.016,
+    "clipEnd": 4474.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t2",
+    "title": "一個靈魂的獨白",
+    "albumDuration": 212,
+    "previewAt": 4502.019,
+    "correlation": 0.87704,
+    "clipStart": 4474.016,
+    "clipEnd": 4686.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t3",
+    "title": "任我行",
+    "albumDuration": 280.667,
+    "previewAt": 4737.03,
+    "correlation": 0.8291,
+    "clipStart": 4686.016,
+    "clipEnd": 4966.683
+  },
+  {
+    "songId": "fear-and-dreams-d2-t4",
+    "title": "the world is actually bigger",
+    "albumDuration": 120,
+    "previewAt": 4976.69,
+    "correlation": 0.727,
+    "clipStart": 4966.683,
+    "clipEnd": 5086.683
+  },
+  {
+    "songId": "fear-and-dreams-d2-t5",
+    "title": "人生馬拉松",
+    "albumDuration": 252.533,
+    "previewAt": 5121.698,
+    "correlation": 0.83017,
+    "clipStart": 5086.683,
+    "clipEnd": 5339.216
+  },
+  {
+    "songId": "fear-and-dreams-d2-t6",
+    "title": "請相信我",
+    "albumDuration": 136.133,
+    "previewAt": 5385.214,
+    "correlation": 0.74884,
+    "clipStart": 5339.216,
+    "clipEnd": 5475.349
+  },
+  {
+    "songId": "fear-and-dreams-d2-t7",
+    "title": "四季",
+    "albumDuration": 219.7,
+    "previewAt": 5523.344,
+    "correlation": 0.9577,
+    "clipStart": 5475.349,
+    "clipEnd": 5695.049
+  },
+  {
+    "songId": "fear-and-dreams-d2-t8",
+    "title": "常在 ∙ 忘記",
+    "albumDuration": 343.967,
+    "previewAt": 5762.062,
+    "correlation": 0.75578,
+    "clipStart": 5695.049,
+    "clipEnd": 6039.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t9",
+    "title": "life goes on",
+    "albumDuration": 224,
+    "previewAt": 6049.023,
+    "correlation": 0.84954,
+    "clipStart": 6039.016,
+    "clipEnd": 6263.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t10",
+    "title": "大人",
+    "albumDuration": 291,
+    "previewAt": 6277.017,
+    "correlation": 0.7344,
+    "clipStart": 6263.016,
+    "clipEnd": 6554.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t11",
+    "title": "致明日的舞",
+    "albumDuration": 210,
+    "previewAt": 6588.009,
+    "correlation": 0.82569,
+    "clipStart": 6554.016,
+    "clipEnd": 6764.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t12",
+    "title": "七百年後",
+    "albumDuration": 267,
+    "previewAt": 6809.016,
+    "correlation": 0.78805,
+    "clipStart": 6764.016,
+    "clipEnd": 7031.016
+  },
+  {
+    "songId": "fear-and-dreams-d2-t13",
+    "title": "幸福摩天輪",
+    "albumDuration": 258.267,
+    "previewAt": 7067.03,
+    "correlation": 0.80582,
+    "clipStart": 7031.016,
+    "clipEnd": 7289.283
+  },
+  {
+    "songId": "fear-and-dreams-d2-t14",
+    "title": "我們萬歲",
+    "albumDuration": 244.993,
+    "previewAt": 7299.29,
+    "correlation": 0.973,
+    "clipStart": 7289.283,
+    "clipEnd": 7534.276
+  },
+  {
+    "songId": "fear-and-dreams-d2-t15",
+    "title": "i’d live it all over again",
+    "albumDuration": 901.698,
+    "previewAt": 7691.031,
+    "correlation": 0.77102,
+    "clipStart": 7534.276,
+    "clipEnd": 8435.974
+  }
+]

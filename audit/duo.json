@@ -1,0 +1,254 @@
+[
+  {
+    "songId": "duo-d1-t1",
+    "title": "今天等我來",
+    "albumDuration": 331.893,
+    "previewAt": 198.237,
+    "correlation": 0.49778,
+    "clipStart": 0,
+    "clipEnd": 484
+  },
+  {
+    "songId": "duo-d1-t2",
+    "title": "好歌獻給你",
+    "albumDuration": 261.52,
+    "previewAt": 530.137,
+    "correlation": 0.87757,
+    "clipStart": 484,
+    "clipEnd": 751
+  },
+  {
+    "songId": "duo-d1-t3",
+    "title": "落花流水",
+    "albumDuration": 246.84,
+    "previewAt": 791.637,
+    "correlation": 0.92275,
+    "clipStart": 751,
+    "clipEnd": 992
+  },
+  {
+    "songId": "duo-d1-t4",
+    "title": "囍帖街",
+    "albumDuration": 267.56,
+    "previewAt": 1038.461,
+    "correlation": 0.92848,
+    "clipStart": 992,
+    "clipEnd": 1262
+  },
+  {
+    "songId": "duo-d1-t5",
+    "title": "七百年後",
+    "albumDuration": 274.8,
+    "previewAt": 1306.042,
+    "correlation": 0.97886,
+    "clipStart": 1262,
+    "clipEnd": 1536
+  },
+  {
+    "songId": "duo-d1-t6",
+    "title": "約定",
+    "albumDuration": 336.253,
+    "previewAt": 1580.842,
+    "correlation": 0.98328,
+    "clipStart": 1536,
+    "clipEnd": 1873
+  },
+  {
+    "songId": "duo-d1-t7",
+    "title": "寂寞夜晚",
+    "albumDuration": 128.307,
+    "previewAt": 1917.095,
+    "correlation": 0.85086,
+    "clipStart": 1873,
+    "clipEnd": 2000
+  },
+  {
+    "songId": "duo-d1-t8",
+    "title": "浮誇",
+    "albumDuration": 275.333,
+    "previewAt": 2045.401,
+    "correlation": 0.84755,
+    "clipStart": 2000,
+    "clipEnd": 2277
+  },
+  {
+    "songId": "duo-d1-t9",
+    "title": "禁色",
+    "albumDuration": 216.533,
+    "previewAt": 2320.734,
+    "correlation": 0.98213,
+    "clipStart": 2277,
+    "clipEnd": 2492
+  },
+  {
+    "songId": "duo-d1-t10",
+    "title": "無人之境",
+    "albumDuration": 252.92,
+    "previewAt": 2537.29,
+    "correlation": 0.98033,
+    "clipStart": 2492,
+    "clipEnd": 2745
+  },
+  {
+    "songId": "duo-d1-t11",
+    "title": "破曉",
+    "albumDuration": 298.52,
+    "previewAt": 2708.976,
+    "correlation": 0.03041,
+    "clipStart": 2745,
+    "clipEnd": 3044
+  },
+  {
+    "songId": "duo-d1-t12",
+    "title": "夕陽無限好",
+    "albumDuration": 244.72,
+    "previewAt": 3088.729,
+    "correlation": 0.97211,
+    "clipStart": 3044,
+    "clipEnd": 3290
+  },
+  {
+    "songId": "duo-d2-t1",
+    "title": "人車誌",
+    "albumDuration": 404.76,
+    "previewAt": 3334.432,
+    "correlation": 0.93148,
+    "clipStart": 3290,
+    "clipEnd": 3698
+  },
+  {
+    "songId": "duo-d2-t2",
+    "title": "裙下之臣",
+    "albumDuration": 274.053,
+    "previewAt": 3739.191,
+    "correlation": 0.95003,
+    "clipStart": 3698,
+    "clipEnd": 3970
+  },
+  {
+    "songId": "duo-d2-t3",
+    "title": "陀飛輪",
+    "albumDuration": 376.6,
+    "previewAt": 4013.244,
+    "correlation": 0.98328,
+    "clipStart": 3970,
+    "clipEnd": 4345
+  },
+  {
+    "songId": "duo-d2-t4",
+    "title": "沙龍",
+    "albumDuration": 276.413,
+    "previewAt": 4389.844,
+    "correlation": 0.90586,
+    "clipStart": 4345,
+    "clipEnd": 4622
+  },
+  {
+    "songId": "duo-d2-t5",
+    "title": "葡萄成熟時",
+    "albumDuration": 401.72,
+    "previewAt": 4666.256,
+    "correlation": 0.92801,
+    "clipStart": 4622,
+    "clipEnd": 5023
+  },
+  {
+    "songId": "duo-d2-t6",
+    "title": "Medley: 熱辣辣/反斗星/頭髮亂了/好戲在後頭",
+    "albumDuration": 726.667,
+    "previewAt": 5067.976,
+    "correlation": 0.94288,
+    "clipStart": 5023,
+    "clipEnd": 5753
+  },
+  {
+    "songId": "duo-d2-t7",
+    "title": "芳華絕代",
+    "albumDuration": 357.453,
+    "previewAt": 5794.641,
+    "correlation": 0.88477,
+    "clipStart": 5753,
+    "clipEnd": 6107
+  },
+  {
+    "songId": "duo-d2-t8",
+    "title": "不來也不去",
+    "albumDuration": 289.2,
+    "previewAt": 6152.094,
+    "correlation": 0.98014,
+    "clipStart": 6107,
+    "clipEnd": 6396
+  },
+  {
+    "songId": "duo-d2-t9",
+    "title": "富士山下",
+    "albumDuration": 298.973,
+    "previewAt": 6441.293,
+    "correlation": 0.99123,
+    "clipStart": 6396,
+    "clipEnd": 6700
+  },
+  {
+    "songId": "duo-d2-t10",
+    "title": "與我常在",
+    "albumDuration": 339.853,
+    "previewAt": 6740.266,
+    "correlation": 0.90305,
+    "clipStart": 6700,
+    "clipEnd": 7037
+  },
+  {
+    "songId": "duo-d2-t11",
+    "title": "我的快樂時代",
+    "albumDuration": 218.173,
+    "previewAt": 7080.118,
+    "correlation": 0.96982,
+    "clipStart": 7037,
+    "clipEnd": 7252
+  },
+  {
+    "songId": "duo-d3-t1",
+    "title": "歌.頌",
+    "albumDuration": 342.053,
+    "previewAt": 7297.856,
+    "correlation": 0.85965,
+    "clipStart": 7252,
+    "clipEnd": 7597
+  },
+  {
+    "songId": "duo-d3-t2",
+    "title": "PG家長指引",
+    "albumDuration": 280.387,
+    "previewAt": 7639.91,
+    "correlation": 0.99044,
+    "clipStart": 7597,
+    "clipEnd": 7880
+  },
+  {
+    "songId": "duo-d3-t3",
+    "title": "那一夜有沒有說",
+    "albumDuration": 204.907,
+    "previewAt": 7920.296,
+    "correlation": 0.93227,
+    "clipStart": 7880,
+    "clipEnd": 8080
+  },
+  {
+    "songId": "duo-d3-t4",
+    "title": "反高潮",
+    "albumDuration": 216.813,
+    "previewAt": 8125.202,
+    "correlation": 0.87554,
+    "clipStart": 8080,
+    "clipEnd": 8349
+  },
+  {
+    "songId": "duo-d3-t5",
+    "title": "一絲不掛",
+    "albumDuration": 284.693,
+    "previewAt": 8394.21,
+    "correlation": 0.94844,
+    "clipStart": 8349,
+    "clipEnd": 8759.936
+  }
+]
