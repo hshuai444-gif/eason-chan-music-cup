@@ -39,7 +39,7 @@ const report = { matched: [], ambiguous: [], unmatched: [], skipped: [] };
 
 for (const file of await filesIn(resolve(folder))) {
   const stem = basename(file, extname(file));
-  const idMatch = stem.match(/(?:^|\s)(get-a-life|duo|easons-life|fear-and-dreams)-d\d+-t\d+(?:$|\s)/i)?.[0]?.trim();
+  const idMatch = stem.match(/(?:^|\s)(get-a-life|moving-on-stage|duo|easons-life|fear-and-dreams)-d\d+-t\d+(?:$|\s)/i)?.[0]?.trim();
   const titleName = stem.replace(/^(?:陳奕迅|陈奕迅|Eason Chan)\s*[-–—_]\s*/i, '').replace(/\s*\((?:live|現場|现场)\)\s*$/i, '');
   const candidates = idMatch && byId.has(idMatch) ? [byId.get(idMatch)] : byTitle.get(normalize(titleName)) || [];
   if (candidates.length === 0) { report.unmatched.push(file); continue; }
