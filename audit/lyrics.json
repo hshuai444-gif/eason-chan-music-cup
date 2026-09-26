@@ -1,0 +1,1299 @@
+{
+  "summary": {
+    "totalEntries": 161,
+    "withStudioReference": 99,
+    "awaitingReview": 26,
+    "missing": 36,
+    "uniqueReferenceTitles": 75
+  },
+  "songs": [
+    {
+      "id": "get-a-life-d1-t1",
+      "chapter": "get-a-life",
+      "title": "Overture",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "get-a-life-d1-t2",
+      "chapter": "get-a-life",
+      "title": "浮誇",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t3",
+      "chapter": "get-a-life",
+      "title": "怪物",
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t4",
+      "chapter": "get-a-life",
+      "title": "心裡有鬼",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t5",
+      "chapter": "get-a-life",
+      "title": "兩名男子街頭相遇",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t6",
+      "chapter": "get-a-life",
+      "title": "不良嗜好",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "get-a-life-d1-t7",
+      "chapter": "get-a-life",
+      "title": "Shall We Dance",
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t8",
+      "chapter": "get-a-life",
+      "title": "三個人的探戈",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t9",
+      "chapter": "get-a-life",
+      "title": "孤獨探戈",
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t10",
+      "chapter": "get-a-life",
+      "title": "活著多好",
+      "status": "reference",
+      "sourceAlbum": "The Easy Ride",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d1-t11",
+      "chapter": "get-a-life",
+      "title": "怕死",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d2-t1",
+      "chapter": "get-a-life",
+      "title": "爛",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "get-a-life-d2-t2",
+      "chapter": "get-a-life",
+      "title": "聽聽",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+    },
+    {
+      "id": "get-a-life-d2-t3",
+      "chapter": "get-a-life",
+      "title": "大個女",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d2-t4",
+      "chapter": "get-a-life",
+      "title": "單車",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+    },
+    {
+      "id": "get-a-life-d2-t5",
+      "chapter": "get-a-life",
+      "title": "最佳損友",
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d2-t6",
+      "chapter": "get-a-life",
+      "title": "Shall We Talk",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+    },
+    {
+      "id": "get-a-life-d2-t7",
+      "chapter": "get-a-life",
+      "title": "如果這一秒鐘你跟我講你不愛我",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d2-t8",
+      "chapter": "get-a-life",
+      "title": "傷信",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+    },
+    {
+      "id": "get-a-life-d2-t9",
+      "chapter": "get-a-life",
+      "title": "1874",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d2-t10",
+      "chapter": "get-a-life",
+      "title": "黑夜不再來",
+      "status": "reference",
+      "sourceAlbum": "Nothing Really Matters",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t1",
+      "chapter": "get-a-life",
+      "title": "美麗有罪",
+      "status": "reference",
+      "sourceAlbum": "Nothing Really Matters",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t2",
+      "chapter": "get-a-life",
+      "title": "2001太空漫遊",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+    },
+    {
+      "id": "get-a-life-d3-t3",
+      "chapter": "get-a-life",
+      "title": "打得火熱",
+      "status": "reference",
+      "sourceAlbum": "打得火熱",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t4",
+      "chapter": "get-a-life",
+      "title": "送院途中",
+      "status": "reference",
+      "sourceAlbum": "Nothing Really Matters",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t5",
+      "chapter": "get-a-life",
+      "title": "幸災樂禍",
+      "status": "reference",
+      "sourceAlbum": "十面埋伏",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t6",
+      "chapter": "get-a-life",
+      "title": "忘記歌詞",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "get-a-life-d3-t7",
+      "chapter": "get-a-life",
+      "title": "夕陽無限好",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t8",
+      "chapter": "get-a-life",
+      "title": "打回原形",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "get-a-life-d3-t9",
+      "chapter": "get-a-life",
+      "title": "防不勝防",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t10",
+      "chapter": "get-a-life",
+      "title": "十面埋伏",
+      "status": "reference",
+      "sourceAlbum": "十面埋伏",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t11",
+      "chapter": "get-a-life",
+      "title": "葡萄成熟時",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t12",
+      "chapter": "get-a-life",
+      "title": "KING KONG + 超人的主題曲",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "get-a-life-d3-t13",
+      "chapter": "get-a-life",
+      "title": "明年今日",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t14",
+      "chapter": "get-a-life",
+      "title": "K歌之王",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "get-a-life-d3-t15",
+      "chapter": "get-a-life",
+      "title": "人來人往",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "get-a-life-d3-t16",
+      "chapter": "get-a-life",
+      "title": "阿牛",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "get-a-life-d3-t17",
+      "chapter": "get-a-life",
+      "title": "與我常在",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t1",
+      "chapter": "moving-on-stage",
+      "title": "Overture",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "moving-on-stage-d1-t2",
+      "chapter": "moving-on-stage",
+      "title": "白玫瑰",
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t3",
+      "chapter": "moving-on-stage",
+      "title": "信心花舍",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d1-t4",
+      "chapter": "moving-on-stage",
+      "title": "K歌之王",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d1-t5",
+      "chapter": "moving-on-stage",
+      "title": "裙下之臣",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d1-t6",
+      "chapter": "moving-on-stage",
+      "title": "富士山下",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d1-t7",
+      "chapter": "moving-on-stage",
+      "title": "不如不見",
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t8",
+      "chapter": "moving-on-stage",
+      "title": "夕陽無限好",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t9",
+      "chapter": "moving-on-stage",
+      "title": "人車誌",
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t10",
+      "chapter": "moving-on-stage",
+      "title": "馬利奧派對",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "moving-on-stage-d1-t11",
+      "chapter": "moving-on-stage",
+      "title": "最佳損友",
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t12",
+      "chapter": "moving-on-stage",
+      "title": "What a Wonderful World",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "moving-on-stage-d1-t13",
+      "chapter": "moving-on-stage",
+      "title": "今日",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d1-t14",
+      "chapter": "moving-on-stage",
+      "title": "黑擇明",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d2-t1",
+      "chapter": "moving-on-stage",
+      "title": "Dance Mix: Shall We Dance/傷信/幸福摩天輪/美麗有罪/2001太空漫遊/給愛麗斯",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "moving-on-stage-d2-t2",
+      "chapter": "moving-on-stage",
+      "title": "熱島小夜曲",
+      "status": "reference",
+      "sourceAlbum": "Listen to Eason Chan",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t3",
+      "chapter": "moving-on-stage",
+      "title": "Crying in the Party",
+      "status": "reference",
+      "sourceAlbum": "Listen to Eason Chan",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t4",
+      "chapter": "moving-on-stage",
+      "title": "我不好愛",
+      "status": "reference",
+      "sourceAlbum": "The Easy Ride",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t5",
+      "chapter": "moving-on-stage",
+      "title": "打回原形",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "moving-on-stage-d2-t6",
+      "chapter": "moving-on-stage",
+      "title": "衝口而出",
+      "status": "reference",
+      "sourceAlbum": "The Easy Ride",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t7",
+      "chapter": "moving-on-stage",
+      "title": "月球上的人",
+      "status": "reference",
+      "sourceAlbum": "認了吧",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t8",
+      "chapter": "moving-on-stage",
+      "title": "葡萄成熟時",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t9",
+      "chapter": "moving-on-stage",
+      "title": "浮誇",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t10",
+      "chapter": "moving-on-stage",
+      "title": "低等動物",
+      "status": "reference",
+      "sourceAlbum": "打得火熱",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d2-t11",
+      "chapter": "moving-on-stage",
+      "title": "粵語殘片",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d3-t1",
+      "chapter": "moving-on-stage",
+      "title": "淘汰",
+      "status": "reference",
+      "sourceAlbum": "認了吧",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d3-t2",
+      "chapter": "moving-on-stage",
+      "title": "黃金時代",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "moving-on-stage-d3-t3",
+      "chapter": "moving-on-stage",
+      "title": "落花流水",
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d3-t4",
+      "chapter": "moving-on-stage",
+      "title": "第五個現代化",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d3-t5",
+      "chapter": "moving-on-stage",
+      "title": "演唱會",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "moving-on-stage-d3-t6",
+      "chapter": "moving-on-stage",
+      "title": "天下無雙",
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d3-t7",
+      "chapter": "moving-on-stage",
+      "title": "與我常在",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "moving-on-stage-d3-t8",
+      "chapter": "moving-on-stage",
+      "title": "明年今日",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "duo-d1-t1",
+      "chapter": "duo",
+      "title": "今天等我來",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "duo-d1-t2",
+      "chapter": "duo",
+      "title": "好歌獻給你",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d1-t3",
+      "chapter": "duo",
+      "title": "落花流水",
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
+    },
+    {
+      "id": "duo-d1-t4",
+      "chapter": "duo",
+      "title": "囍帖街",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d1-t5",
+      "chapter": "duo",
+      "title": "七百年後",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "duo-d1-t6",
+      "chapter": "duo",
+      "title": "約定",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d1-t7",
+      "chapter": "duo",
+      "title": "寂寞夜晚",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d1-t8",
+      "chapter": "duo",
+      "title": "浮誇",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "duo-d1-t9",
+      "chapter": "duo",
+      "title": "禁色",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d1-t10",
+      "chapter": "duo",
+      "title": "無人之境",
+      "status": "reference",
+      "sourceAlbum": "Time Flies",
+      "reason": null
+    },
+    {
+      "id": "duo-d1-t11",
+      "chapter": "duo",
+      "title": "破曉",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d1-t12",
+      "chapter": "duo",
+      "title": "夕陽無限好",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t1",
+      "chapter": "duo",
+      "title": "人車誌",
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t2",
+      "chapter": "duo",
+      "title": "裙下之臣",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "duo-d2-t3",
+      "chapter": "duo",
+      "title": "陀飛輪",
+      "status": "reference",
+      "sourceAlbum": "Time Flies",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t4",
+      "chapter": "duo",
+      "title": "沙龍",
+      "status": "reference",
+      "sourceAlbum": "H³M",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t5",
+      "chapter": "duo",
+      "title": "葡萄成熟時",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t6",
+      "chapter": "duo",
+      "title": "Medley: 熱辣辣/反斗星/頭髮亂了/好戲在後頭",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d2-t7",
+      "chapter": "duo",
+      "title": "芳華絕代",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d2-t8",
+      "chapter": "duo",
+      "title": "不來也不去",
+      "status": "reference",
+      "sourceAlbum": "H³M",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t9",
+      "chapter": "duo",
+      "title": "富士山下",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "duo-d2-t10",
+      "chapter": "duo",
+      "title": "與我常在",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "duo-d2-t11",
+      "chapter": "duo",
+      "title": "我的快樂時代",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "duo-d3-t1",
+      "chapter": "duo",
+      "title": "歌.頌",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d3-t2",
+      "chapter": "duo",
+      "title": "PG家長指引",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d3-t3",
+      "chapter": "duo",
+      "title": "那一夜有沒有說",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t4",
+      "chapter": "duo",
+      "title": "反高潮",
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t5",
+      "chapter": "duo",
+      "title": "一絲不掛",
+      "status": "reference",
+      "sourceAlbum": "Time Flies",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t6",
+      "chapter": "duo",
+      "title": "單車",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+    },
+    {
+      "id": "duo-d3-t7",
+      "chapter": "duo",
+      "title": "等",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d3-t8",
+      "chapter": "duo",
+      "title": "Mr. Lonely",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d3-t9",
+      "chapter": "duo",
+      "title": "我甚麼都沒有",
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t10",
+      "chapter": "duo",
+      "title": "抱擁這分鐘",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t11",
+      "chapter": "duo",
+      "title": "The End of the World",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "duo-d3-t12",
+      "chapter": "duo",
+      "title": "我的世界末日",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t13",
+      "chapter": "duo",
+      "title": "每一個明天",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t14",
+      "chapter": "duo",
+      "title": "明年今日",
+      "status": "reference",
+      "sourceAlbum": "The Line-Up",
+      "reason": null
+    },
+    {
+      "id": "duo-d3-t15",
+      "chapter": "duo",
+      "title": "Every Time We Say Goodbye",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "easons-life-d1-t1",
+      "chapter": "easons-life",
+      "title": "今天只做一件事",
+      "status": "reference",
+      "sourceAlbum": "H³M",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d1-t2",
+      "chapter": "easons-life",
+      "title": "L.I.F.E. Overture",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "easons-life-d1-t3",
+      "chapter": "easons-life",
+      "title": "花花世界",
+      "status": "reference",
+      "sourceAlbum": "Taste the Atmosphere",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d1-t4",
+      "chapter": "easons-life",
+      "title": "Life Goes On",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "输入列表内重复"
+    },
+    {
+      "id": "easons-life-d1-t5",
+      "chapter": "easons-life",
+      "title": "每一個明天",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d1-t6",
+      "chapter": "easons-life",
+      "title": "美滿人生",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+    },
+    {
+      "id": "easons-life-d1-t7",
+      "chapter": "easons-life",
+      "title": "Welcome To The Future",
+      "status": "reference",
+      "sourceAlbum": "Taste the Atmosphere",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d1-t8",
+      "chapter": "easons-life",
+      "title": "時代巨輪",
+      "status": "reference",
+      "sourceAlbum": "Listen to Eason Chan",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d1-t9",
+      "chapter": "easons-life",
+      "title": "大人",
+      "status": "reference",
+      "sourceAlbum": "Time Flies",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d1-t10",
+      "chapter": "easons-life",
+      "title": "碌卡",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "easons-life-d2-t1",
+      "chapter": "easons-life",
+      "title": "Stranger Under My Skin",
+      "status": "reference",
+      "sourceAlbum": "Stranger Under My Skin",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t2",
+      "chapter": "easons-life",
+      "title": "幸福摩天輪",
+      "status": "reference",
+      "sourceAlbum": "幸福",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t3",
+      "chapter": "easons-life",
+      "title": "信任",
+      "status": "reference",
+      "sourceAlbum": "…3mm",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t4",
+      "chapter": "easons-life",
+      "title": "時光倒流二十年",
+      "status": "reference",
+      "sourceAlbum": "幸福",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t5",
+      "chapter": "easons-life",
+      "title": "夕陽無限好",
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t6",
+      "chapter": "easons-life",
+      "title": "今日",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t7",
+      "chapter": "easons-life",
+      "title": "我的快樂時代",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "easons-life-d2-t8",
+      "chapter": "easons-life",
+      "title": "天下無雙",
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t9",
+      "chapter": "easons-life",
+      "title": "與我常在",
+      "status": "reference",
+      "sourceAlbum": "與我常在",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t10",
+      "chapter": "easons-life",
+      "title": "床頭床尾",
+      "status": "reference",
+      "sourceAlbum": "The Key",
+      "reason": null
+    },
+    {
+      "id": "easons-life-d2-t11",
+      "chapter": "easons-life",
+      "title": "主旋律",
+      "status": "reference",
+      "sourceAlbum": "The Key",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t1",
+      "chapter": "fear-and-dreams",
+      "title": "mozart’s requiem in d minor",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "fear-and-dreams-d1-t2",
+      "chapter": "fear-and-dreams",
+      "title": "2001太空漫遊",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+    },
+    {
+      "id": "fear-and-dreams-d1-t3",
+      "chapter": "fear-and-dreams",
+      "title": "人神鬥",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+    },
+    {
+      "id": "fear-and-dreams-d1-t4",
+      "chapter": "fear-and-dreams",
+      "title": "當這地球沒有花",
+      "status": "reference",
+      "sourceAlbum": "Nothing Really Matters",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t5",
+      "chapter": "fear-and-dreams",
+      "title": "謊言",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "fear-and-dreams-d1-t6",
+      "chapter": "fear-and-dreams",
+      "title": "時代巨輪",
+      "status": "reference",
+      "sourceAlbum": "Listen to Eason Chan",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t7",
+      "chapter": "fear-and-dreams",
+      "title": "想聽",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "fear-and-dreams-d1-t8",
+      "chapter": "fear-and-dreams",
+      "title": "黑洞",
+      "status": "reference",
+      "sourceAlbum": "準備中",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t9",
+      "chapter": "fear-and-dreams",
+      "title": "龍舌蘭",
+      "status": "reference",
+      "sourceAlbum": "L.O.V.E.",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t10",
+      "chapter": "fear-and-dreams",
+      "title": "異夢",
+      "status": "reference",
+      "sourceAlbum": "準備中",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t11",
+      "chapter": "fear-and-dreams",
+      "title": "如果這一秒鐘你跟我講你不愛我",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t12",
+      "chapter": "fear-and-dreams",
+      "title": "黑夜不再來",
+      "status": "reference",
+      "sourceAlbum": "Nothing Really Matters",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t13",
+      "chapter": "fear-and-dreams",
+      "title": "開不了心",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "fear-and-dreams-d1-t14",
+      "chapter": "fear-and-dreams",
+      "title": "告別娑婆",
+      "status": "reference",
+      "sourceAlbum": "The Key",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d1-t15",
+      "chapter": "fear-and-dreams",
+      "title": "完",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+    },
+    {
+      "id": "fear-and-dreams-d1-t16",
+      "chapter": "fear-and-dreams",
+      "title": "今日",
+      "status": "reference",
+      "sourceAlbum": "天佑愛人",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t1",
+      "chapter": "fear-and-dreams",
+      "title": "夢的可能",
+      "status": "reference",
+      "sourceAlbum": "準備中",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t2",
+      "chapter": "fear-and-dreams",
+      "title": "一個靈魂的獨白",
+      "status": "reference",
+      "sourceAlbum": "準備中",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t3",
+      "chapter": "fear-and-dreams",
+      "title": "任我行",
+      "status": "reference",
+      "sourceAlbum": "The Key",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t4",
+      "chapter": "fear-and-dreams",
+      "title": "the world is actually bigger",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "fear-and-dreams-d2-t5",
+      "chapter": "fear-and-dreams",
+      "title": "人生馬拉松",
+      "status": "reference",
+      "sourceAlbum": "準備中",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t6",
+      "chapter": "fear-and-dreams",
+      "title": "請相信我",
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t7",
+      "chapter": "fear-and-dreams",
+      "title": "四季",
+      "status": "reference",
+      "sourceAlbum": "四季",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t8",
+      "chapter": "fear-and-dreams",
+      "title": "常在 ∙ 忘記",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    },
+    {
+      "id": "fear-and-dreams-d2-t9",
+      "chapter": "fear-and-dreams",
+      "title": "life goes on",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "输入列表内重复"
+    },
+    {
+      "id": "fear-and-dreams-d2-t10",
+      "chapter": "fear-and-dreams",
+      "title": "大人",
+      "status": "reference",
+      "sourceAlbum": "Time Flies",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t11",
+      "chapter": "fear-and-dreams",
+      "title": "致明日的舞",
+      "status": "reference",
+      "sourceAlbum": "CHIN UP!",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t12",
+      "chapter": "fear-and-dreams",
+      "title": "七百年後",
+      "status": "review",
+      "sourceAlbum": null,
+      "reason": "找到多个歌词版本，无法安全选择"
+    },
+    {
+      "id": "fear-and-dreams-d2-t13",
+      "chapter": "fear-and-dreams",
+      "title": "幸福摩天輪",
+      "status": "reference",
+      "sourceAlbum": "幸福",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t14",
+      "chapter": "fear-and-dreams",
+      "title": "我們萬歲",
+      "status": "reference",
+      "sourceAlbum": "L.O.V.E.",
+      "reason": null
+    },
+    {
+      "id": "fear-and-dreams-d2-t15",
+      "chapter": "fear-and-dreams",
+      "title": "i’d live it all over again",
+      "status": "missing",
+      "sourceAlbum": null,
+      "reason": "未找到可确认的原唱正式录音及录音室专辑"
+    }
+  ]
+}

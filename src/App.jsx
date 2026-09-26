@@ -272,6 +272,7 @@ function LyricsPage({ entry, data, onClose, onNavigate }) {
   const closeRef = useRef(null);
   const pageRef = useRef(null);
   const lyrics = getLyricsForSong(data, entry);
+  const lyricsStatus = data?.statusBySong?.[entry.id];
   const { previous, next } = getAdjacentSongs(entry);
 
   useEffect(() => {
@@ -317,7 +318,7 @@ function LyricsPage({ entry, data, onClose, onNavigate }) {
           <div className="lyrics-identity-bottom"><i /><p>{entry.chapter.edition}<br />{entry.chapter.year} / 官方現場發行曲序</p></div>
         </div>
         <div className="lyrics-reading">
-          <div className="lyrics-reading-head"><span>THE WORDS</span><span>{lyrics ? lyrics.sourceLabel : 'SOURCE PENDING'}</span></div>
+          <div className="lyrics-reading-head"><span>THE WORDS</span><span>{lyrics ? lyrics.sourceLabel : lyricsStatus === 'review' ? 'VERSION REVIEW' : 'SOURCE PENDING'}</span></div>
           {lyrics ? <>
             <div className="lyrics-stanzas">
               {lyrics.sections.map((section, sectionIndex) => <section key={`${entry.id}-${sectionIndex}`} className="lyrics-stanza" aria-label={`歌詞段落 ${sectionIndex + 1}`}>
@@ -329,8 +330,8 @@ function LyricsPage({ entry, data, onClose, onNavigate }) {
             {lyrics.sourceUrl && <a className="lyrics-source-link" href={lyrics.sourceUrl} target="_blank" rel="noreferrer">核對歌詞來源 <Arrow diagonal /></a>}
           </> : <div className="lyrics-empty">
             <span>ARCHIVE NOTE / {entry.chapter.year}</span>
-            <h3>Words<br />await a source.</h3>
-            <p>這首歌的歌詞尚無可在本站展示的核對文本。你可以在 QQ 音樂查找對應歌曲；取得可在本站展示的文本後，這裡會以分段閱讀方式呈現。</p>
+            <h3>{lyricsStatus === 'review' ? <>Words<br />need review.</> : <>Words<br />await a source.</>}</h3>
+            <p>{lyricsStatus === 'review' ? '現有歌詞資料對應多個錄音或文本版本，尚不能確認這場演出的用詞。核對版本後，這裡會呈現完整歌詞。' : '尚未找到與這首歌及其版本可靠對應的歌詞文本。取得可核對的資料後，這裡會以分段閱讀方式呈現。'}</p>
             <a href={getQqMusicSearchUrl(entry)} target="_blank" rel="noreferrer">在 QQ 音樂查找歌詞 <Arrow diagonal /></a>
           </div>}
         </div>
