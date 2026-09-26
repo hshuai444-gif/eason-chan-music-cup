@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalEntries": 161,
-    "withStudioReference": 99,
-    "awaitingReview": 26,
+    "withStudioReference": 121,
+    "awaitingReview": 4,
     "missing": 36,
-    "uniqueReferenceTitles": 75
+    "uniqueReferenceTitles": 91
   },
   "songs": [
     {
@@ -51,9 +51,9 @@
       "id": "get-a-life-d1-t6",
       "chapter": "get-a-life",
       "title": "不良嗜好",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
     },
     {
       "id": "get-a-life-d1-t7",
@@ -99,9 +99,9 @@
       "id": "get-a-life-d2-t1",
       "chapter": "get-a-life",
       "title": "爛",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
     },
     {
       "id": "get-a-life-d2-t2",
@@ -123,9 +123,9 @@
       "id": "get-a-life-d2-t4",
       "chapter": "get-a-life",
       "title": "單車",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
     },
     {
       "id": "get-a-life-d2-t5",
@@ -139,9 +139,9 @@
       "id": "get-a-life-d2-t6",
       "chapter": "get-a-life",
       "title": "Shall We Talk",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
     },
     {
       "id": "get-a-life-d2-t7",
@@ -187,9 +187,9 @@
       "id": "get-a-life-d3-t2",
       "chapter": "get-a-life",
       "title": "2001太空漫遊",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
     },
     {
       "id": "get-a-life-d3-t3",
@@ -283,9 +283,9 @@
       "id": "get-a-life-d3-t14",
       "chapter": "get-a-life",
       "title": "K歌之王",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "打得火熱",
+      "reason": null
     },
     {
       "id": "get-a-life-d3-t15",
@@ -299,9 +299,9 @@
       "id": "get-a-life-d3-t16",
       "chapter": "get-a-life",
       "title": "阿牛",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "U87",
+      "reason": null
     },
     {
       "id": "get-a-life-d3-t17",
@@ -331,33 +331,33 @@
       "id": "moving-on-stage-d1-t3",
       "chapter": "moving-on-stage",
       "title": "信心花舍",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d1-t4",
       "chapter": "moving-on-stage",
       "title": "K歌之王",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "打得火熱",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d1-t5",
       "chapter": "moving-on-stage",
       "title": "裙下之臣",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d1-t6",
       "chapter": "moving-on-stage",
       "title": "富士山下",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d1-t7",
@@ -419,9 +419,9 @@
       "id": "moving-on-stage-d1-t14",
       "chapter": "moving-on-stage",
       "title": "黑擇明",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d2-t1",
@@ -507,9 +507,9 @@
       "id": "moving-on-stage-d2-t11",
       "chapter": "moving-on-stage",
       "title": "粵語殘片",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d3-t1",
@@ -523,9 +523,9 @@
       "id": "moving-on-stage-d3-t2",
       "chapter": "moving-on-stage",
       "title": "黃金時代",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
     },
     {
       "id": "moving-on-stage-d3-t3",
@@ -683,9 +683,9 @@
       "id": "duo-d2-t2",
       "chapter": "duo",
       "title": "裙下之臣",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
     },
     {
       "id": "duo-d2-t3",
@@ -739,9 +739,9 @@
       "id": "duo-d2-t9",
       "chapter": "duo",
       "title": "富士山下",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "What’s Going On…?",
+      "reason": null
     },
     {
       "id": "duo-d2-t10",
@@ -755,9 +755,9 @@
       "id": "duo-d2-t11",
       "chapter": "duo",
       "title": "我的快樂時代",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
     },
     {
       "id": "duo-d3-t1",
@@ -803,9 +803,9 @@
       "id": "duo-d3-t6",
       "chapter": "duo",
       "title": "單車",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
     },
     {
       "id": "duo-d3-t7",
@@ -909,7 +909,7 @@
       "title": "Life Goes On",
       "status": "review",
       "sourceAlbum": null,
-      "reason": "输入列表内重复"
+      "reason": "找到多个歌词版本，无法安全选择"
     },
     {
       "id": "easons-life-d1-t5",
@@ -955,9 +955,9 @@
       "id": "easons-life-d1-t10",
       "chapter": "easons-life",
       "title": "碌卡",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "…3mm",
+      "reason": null
     },
     {
       "id": "easons-life-d2-t1",
@@ -1011,9 +1011,9 @@
       "id": "easons-life-d2-t7",
       "chapter": "easons-life",
       "title": "我的快樂時代",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "我的快樂時代",
+      "reason": null
     },
     {
       "id": "easons-life-d2-t8",
@@ -1059,9 +1059,9 @@
       "id": "fear-and-dreams-d1-t2",
       "chapter": "fear-and-dreams",
       "title": "2001太空漫遊",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "最早正式专辑上找到多个录音，无法确定版本"
+      "status": "reference",
+      "sourceAlbum": "Shall We Dance? Shall We Talk!",
+      "reason": null
     },
     {
       "id": "fear-and-dreams-d1-t3",
@@ -1099,9 +1099,9 @@
       "id": "fear-and-dreams-d1-t7",
       "chapter": "fear-and-dreams",
       "title": "想聽",
-      "status": "review",
-      "sourceAlbum": null,
-      "reason": "找到多个歌词版本，无法安全选择"
+      "status": "reference",
+      "sourceAlbum": "Life Continues…",
+      "reason": null
     },
     {
       "id": "fear-and-dreams-d1-t8",
@@ -1245,7 +1245,7 @@
       "title": "life goes on",
       "status": "review",
       "sourceAlbum": null,
-      "reason": "输入列表内重复"
+      "reason": "找到多个歌词版本，无法安全选择"
     },
     {
       "id": "fear-and-dreams-d2-t10",

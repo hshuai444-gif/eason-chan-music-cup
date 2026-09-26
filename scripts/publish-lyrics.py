@@ -91,7 +91,10 @@ def load_reports(paths):
         with path.open(encoding="utf-8-sig", newline="") as stream:
             for row in csv.DictReader(stream):
                 title = row["song"].split(" - ", 1)[-1]
-                reports[key(title)] = row
+                normalized_title = key(title)
+                if row["failure_reason"] == "输入列表内重复" and normalized_title in reports:
+                    continue
+                reports[normalized_title] = row
     return reports
 
 
@@ -118,11 +121,16 @@ def main():
             meta = source["metadata"]
             album = meta["album"]
             lyric_id = meta.get("lyrics_id")
+            edition_note = f"歌詞取自《{album}》的錄音室版本；本章的現場演唱可能有改詞、換段或省略，尚未逐字核對。"
+            if meta.get("review_note"):
+                edition_note += " 已核對多份時間軸版本的歌詞文字相同；本站只展示文字，不沿用錄音室時間碼。"
+            if meta.get("recording_review"):
+                edition_note += " 已按原始專輯與錄音時長人工核對版本；本站不沿用錄音室時間碼。"
             by_song[track["id"]] = {
                 "text": source["text"],
                 "sourceLabel": "LRCLIB · 錄音室版歌詞",
                 "sourceUrl": f"https://lrclib.net/api/get/{lyric_id}" if lyric_id else None,
-                "editionNote": f"歌詞取自《{album}》的錄音室版本；本章的現場演唱可能有改詞、換段或省略，尚未逐字核對。",
+                "editionNote": edition_note,
             }
             status = "reference"
         else:
