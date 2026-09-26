@@ -4,11 +4,11 @@
 
 ## 公开网站与开源代码
 
-项目源代码按 [MIT License](LICENSE) 开源；演唱会视频、视频截帧、唱片封面、歌词及第三方标识不适用此代码许可证。访客访问公开网址即可浏览网站，不需要注册账号。
+项目源代码按 [MIT License](LICENSE) 开源；演唱会视频、由视频导出的歌曲音频、视频截帧、唱片封面、歌词及第三方标识不适用此代码许可证。访客访问公开网址即可浏览网站，不需要注册账号。
 
 网站可用 GitHub Pages 部署：推送到 `main` 后，`.github/workflows/pages.yml` 会构建并发布 `dist`。首次部署需在仓库 **Settings → Pages → Build and deployment** 选择 **GitHub Actions**。项目网址通常是 `https://<GitHub 用户名>.github.io/<仓库名>/`。源码中的图片、歌词数据和站内链接支持项目子路径，不依赖原电脑的 `127.0.0.1` 地址。`127.0.0.1` 仅供本机开发服务器运行期间使用。
 
-演唱会原片没有放进 Git 仓库或 GitHub Pages。GitHub Pages 不适合直接托管这些大型影片。若要在公开网站播放逐曲影像，需先确认有公开传播许可，再把 `gal-concert.mp4`、`mos-concert.mp4`、`duo-concert.mp4`、`fnds-concert.mp4` 上传到支持 MP4 Range 请求的媒体主机的 `media/` 目录，并在 GitHub 仓库 **Settings → Secrets and variables → Actions → Variables** 添加 `MEDIA_BASE_URL`，值为媒体主机根网址，例如 `https://media.example.com/`。此变量未设置时，公开版会标示影像暂未提供；本机开发版仍读取 D 盘原片。媒体主机应允许公开读取、跨域播放及 `Range` 请求。
+演唱会原片没有放进 Git 仓库或 GitHub Pages。GitHub Pages 不适合直接托管这些大型影片。若要在公开网站播放逐曲影像，需把 `gal-concert.mp4`、`mos-concert.mp4`、`duo-concert.mp4`、`fnds-concert.mp4` 上传到支持 MP4 Range 请求的媒体主机的 `media/` 目录，并在 GitHub 仓库 **Settings → Secrets and variables → Actions → Variables** 添加 `MEDIA_BASE_URL`，值为媒体主机根网址，例如 `https://media.example.com/`。此变量未设置时，公开版会标示影像暂未提供；本机开发版仍读取 D 盘原片。媒体主机应允许公开读取、跨域播放及 `Range` 请求。
 
 每章开头有一段约 11 秒的原创管弦氛围序曲。访客点击“播放序曲 · 进入本章”后才播放，结束时进入章节；也可直接跳过。五段音乐由 `scripts/generate-intros.py` 生成，没有采样第三方录音。章节主图、整场影片海报和逐曲影片海报均使用对应现场专辑封面；封面来自 Apple Music，不属于源码的 MIT 许可证。
 
@@ -53,6 +53,12 @@ npm run dev
 
 ## 四部演唱会影片与逐曲片段
 
+### 逐曲音频
+
+用户确认四部已提供的演唱会影片可用于本网站后，网站从现有影片按 `src/video-cues.js` 的时间点导出 130 个独立的 AAC/M4A 文件，放在 `public/song-audio/`，并由 `src/song-audio-manifest.json` 标记可播放曲目。歌曲页无需加载整部影片即可播放对应音频；播放音频时会暂停本机影片，反之亦然。点击曲目表的 ▶ 可进入带音频播放器的歌曲页。音频文件随 GitHub Pages 发布，原始视频仍只在本机读取。
+
+如需用更新的原片重新导出，请先在 `.env.local` 配置下文的四条视频路径，再运行 `npm run extract:audio`。该脚本按歌名编号生成文件，已存在的非空文件会跳过；要重新生成某首歌，先移走对应的 `public/song-audio/<歌曲编号>.m4a`。音频编码为 112 kb/s AAC 双声道，输出和源码清单不含本机视频路径。DUO 曲序后 10 首和 Eason’s Life 的 21 首没有已提供的对应影片，歌曲页会明确提示音源暂缺。
+
 Get A Life、Moving On Stage、DUO Disc 1 和 FEAR and DREAMS 的影片均从用户提供的本地文件按需读取，避免复制大型影片。把 `.env.example` 复制为 `.env.local`，在其中设置四条本机影片路径；`.env.local` 已被 Git 忽略。也可在启动前设置环境变量：
 
 ```powershell
@@ -63,7 +69,7 @@ $env:DUO_VIDEO_PATH='D:\新的目录\DUO Disc 1.mp4'
 npm run dev
 ```
 
-Vite 的开发和预览服务器分别通过 `/media/gal-concert.mp4`、`/media/fnds-concert.mp4`、`/media/mos-concert.mp4` 和 `/media/duo-concert.mp4` 提供支持 Range 请求的视频流。各章可播放整部原片；歌曲页依据 `src/video-cues.js` 的起止时间在同一原片内播放对应段落，到下一首的起点自动停止。这是无重复文件的时间切片，不会输出 130 个独立 MP4。原片只在本机读取，公开传播权须另行确认。
+Vite 的开发和预览服务器分别通过 `/media/gal-concert.mp4`、`/media/fnds-concert.mp4`、`/media/mos-concert.mp4` 和 `/media/duo-concert.mp4` 提供支持 Range 请求的视频流。各章可播放整部原片；歌曲页依据 `src/video-cues.js` 的起止时间在同一原片内播放对应段落，到下一首的起点自动停止。这是无重复文件的时间切片，不会输出 130 个独立 MP4。原片只在本机读取，网站另外发布已获授权的逐曲音频。
 
 Get A Life 的 38 首、MOS 的 33 首和 FNDS 的 31 首均有对应影片时间段；DUO Disc 1 覆盖前 28 首，其余 10 首显示影像缺口，共 130 个可播放片段。Get A Life 的 38 段官方试听均在用户提供的影片中定位，见 `audit/gal.json`。MOS 和 DUO 的切点参考公开完整影片章节，并以官方现场专辑试听片段核对：MOS 数码版 27 首均匹配，DUO Disc 1 的 28 首中有 26 首高度匹配；《破曉》未取得可靠的音轨匹配，详见 `audit/README.md`。FNDS 的官方专辑音轨从原片第 77.805 秒起顺序接合，因此 31 首的起止点按官方发行时长累计计算，31 段官方试听均落在对应切片内。逐曲边界是本站针对四部影片的编辑切点，不能替代发行方正式章节标记；原片与唱片可能包含不同长度的串场和掌声。核对数据见 `audit/`。
 

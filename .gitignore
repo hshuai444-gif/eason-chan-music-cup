@@ -7,4 +7,5 @@ tmp/
 *.log
 __pycache__/
 *.pyc
+public/song-audio/*.partial.m4a
 .DS_Store

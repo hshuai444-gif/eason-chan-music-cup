@@ -21,7 +21,7 @@ export const chapters = [
     listenUrl: 'https://open.spotify.com/album/28EFqQxFk44OXnmbVaOHEn',
     mediaUrl: 'https://music.apple.com/us/album/get-a-life-live/1462045698',
     mediaLabel: '查看官方現場影像',
-    sourceNote: '官方發行封面與音樂影像；完整現場攝影使用權待核實。',
+    sourceNote: '官方發行封面；本地現場影片由使用者提供並確認可用於本網站。',
     discs: [
       split('Overture｜浮誇｜怪物｜心裡有鬼｜兩名男子街頭相遇｜不良嗜好｜Shall We Dance｜三個人的探戈｜孤獨探戈｜活著多好｜怕死'),
       split('爛｜聽聽｜大個女｜單車｜最佳損友｜Shall We Talk｜如果這一秒鐘你跟我講你不愛我｜傷信｜1874｜黑夜不再來'),

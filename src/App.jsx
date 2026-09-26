@@ -3,6 +3,7 @@ import { chapters, totalTracks } from './archive.js';
 import { getAdjacentSongs, getLyricsForSong, getQqMusicSearchUrl, getSongById } from './lyrics.js';
 import { films, getVideoCue } from './video-cues.js';
 import { siteAsset, videoAvailable } from './paths.js';
+import songAudioManifest from './song-audio-manifest.json';
 
 const pad = (value) => String(value).padStart(2, '0');
 
@@ -188,13 +189,13 @@ function TrackList({ chapter, onSong }) {
         <div className="disc" key={`${chapter.id}-${discIndex}`}>
           <div className="disc-heading"><span>DISC {pad(discIndex + 1)}</span><span>{pad(disc.length)} TRACKS</span></div>
           <ol>{disc.map((song, songIndex) => <li key={`${song}-${songIndex}`}>
-            <a className={selected === song ? 'is-selected' : ''} href={`?song=${chapter.id}-d${discIndex + 1}-t${songIndex + 1}#${chapter.id}`} aria-label={`開啟 ${song} 的歌曲檔案${getVideoCue(getSongById(`${chapter.id}-d${discIndex + 1}-t${songIndex + 1}`))?.available ? '及現場片段' : ''}`} onClick={(event) => {
+            <a className={selected === song ? 'is-selected' : ''} href={`?song=${chapter.id}-d${discIndex + 1}-t${songIndex + 1}#${chapter.id}`} aria-label={`開啟 ${song} 的歌曲檔案${songAudioManifest[`${chapter.id}-d${discIndex + 1}-t${songIndex + 1}`] ? '及現場音頻' : ''}`} onClick={(event) => {
               if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
               event.preventDefault();
               setSelected(song);
               onSong(getSongById(`${chapter.id}-d${discIndex + 1}-t${songIndex + 1}`));
             }}>
-              <span className="song-number">{pad(songIndex + 1)}</span><span className="song-name">{song}</span><span className="song-mark">{selected === song ? '●' : getVideoCue(getSongById(`${chapter.id}-d${discIndex + 1}-t${songIndex + 1}`))?.available ? '▶' : '↗'}</span>
+              <span className="song-number">{pad(songIndex + 1)}</span><span className="song-name">{song}</span><span className="song-mark">{selected === song ? '●' : songAudioManifest[`${chapter.id}-d${discIndex + 1}-t${songIndex + 1}`] ? '▶' : '↗'}</span>
             </a>
           </li>)}</ol>
         </div>
@@ -205,8 +206,23 @@ function TrackList({ chapter, onSong }) {
   </div>;
 }
 
-function SongFilm({ entry }) {
-  const videoRef = useRef(null);
+function SongAudio({ entry, audioRef, videoRef }) {
+  const duration = songAudioManifest[entry.id];
+  if (!duration) return <p className="song-audio-unavailable">這首歌暫無對應的已提供演出音源。</p>;
+  const caveat = getVideoCue(entry)?.caveat;
+  const clock = `${Math.floor(duration / 60)}:${pad(Math.floor(duration % 60))}`;
+  return <div className="song-audio">
+    <div className="song-audio-heading"><span>THE SOUND / TRACK {pad(entry.songIndex + 1)}</span><span>{clock}</span></div>
+    <div className="song-audio-body">
+      <img src={entry.chapter.cover} alt={`${entry.chapter.edition} 專輯封面`} loading="lazy" />
+      <div><strong>{entry.title}</strong><span>{entry.chapter.title} · 現場音頻</span></div>
+    </div>
+    <audio ref={audioRef} aria-label={`${entry.title} 現場音頻`} controls preload="none" src={siteAsset(`song-audio/${entry.id}.m4a`)} onPlay={() => videoRef.current?.pause()} />
+    {caveat && <p className="song-audio-note">{caveat}</p>}
+  </div>;
+}
+
+function SongFilm({ entry, videoRef, audioRef }) {
   const frameRef = useRef(null);
   const cue = getVideoCue(entry);
   const [error, setError] = useState(false);
@@ -241,7 +257,7 @@ function SongFilm({ entry }) {
         poster={cue.poster}
         src={cue.url}
         onLoadedMetadata={(event) => { event.currentTarget.currentTime = cue.start; setElapsed(0); }}
-        onPlay={() => setPlaying(true)}
+        onPlay={() => { audioRef.current?.pause(); setPlaying(true); }}
         onPause={() => setPlaying(false)}
         onTimeUpdate={(event) => {
           const position = event.currentTarget.currentTime;
@@ -271,6 +287,8 @@ function SongFilm({ entry }) {
 function LyricsPage({ entry, data, onClose, onNavigate }) {
   const closeRef = useRef(null);
   const pageRef = useRef(null);
+  const audioRef = useRef(null);
+  const videoRef = useRef(null);
   const lyrics = getLyricsForSong(data, entry);
   const lyricsStatus = data?.statusBySong?.[entry.id];
   const { previous, next } = getAdjacentSongs(entry);
@@ -283,11 +301,11 @@ function LyricsPage({ entry, data, onClose, onNavigate }) {
     closeRef.current?.focus();
     const onKeyDown = (event) => {
       if (event.key === 'Escape') onClose();
-      const withinFilmControls = event.target.closest?.('.song-film-controls');
-      if (event.key === 'ArrowLeft' && previous && !withinFilmControls) onNavigate(previous);
-      if (event.key === 'ArrowRight' && next && !withinFilmControls) onNavigate(next);
+      const withinMediaControls = event.target.closest?.('.song-film-controls, audio');
+      if (event.key === 'ArrowLeft' && previous && !withinMediaControls) onNavigate(previous);
+      if (event.key === 'ArrowRight' && next && !withinMediaControls) onNavigate(next);
       if (event.key === 'Tab') {
-        const targets = [...pageRef.current.querySelectorAll('a[href], button:not([disabled]), input:not([disabled])')];
+        const targets = [...pageRef.current.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), audio[controls]')];
         const first = targets[0];
         const last = targets.at(-1);
         if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
@@ -307,14 +325,15 @@ function LyricsPage({ entry, data, onClose, onNavigate }) {
     <div className="lyrics-page-shell">
       <header className="lyrics-header">
         <button ref={closeRef} type="button" onClick={onClose}>← <span>BACK TO THE RECORD</span></button>
-        <span>EASON CHAN MUSIC CUP / WORDS & FILM</span>
+        <span>EASON CHAN MUSIC CUP / WORDS & SOUND</span>
         <span>{entry.chapter.index} / {entry.chapter.title}</span>
       </header>
       <div className="lyrics-main">
         <div className="lyrics-identity">
           <div className="lyrics-identity-top"><span>SONG {pad(entry.songIndex + 1)}</span><span>DISC {pad(entry.discIndex + 1)}</span></div>
           <h2 id="lyrics-title">{entry.title}</h2>
-          <SongFilm entry={entry} />
+          <SongAudio entry={entry} audioRef={audioRef} videoRef={videoRef} />
+          <SongFilm entry={entry} audioRef={audioRef} videoRef={videoRef} />
           <div className="lyrics-identity-bottom"><i /><p>{entry.chapter.edition}<br />{entry.chapter.year} / 官方現場發行曲序</p></div>
         </div>
         <div className="lyrics-reading">
@@ -361,7 +380,7 @@ function ConcertFilm({ chapter }) {
     <div className="film-heading" data-reveal>
       <span>THE FILM / {chapter.period}</span>
       <h3 id={`${chapter.id}-film-title`}>{chapter.title === 'FEAR AND DREAMS' ? <>Fear becomes<br /><em>Dreams.</em></> : chapter.title}</h3>
-      <p>{videoAvailable ? `${film.source}。聲音與播放由你開始；曲目列表可以直接進入歌曲片段。` : '這部演唱會影像暫未於公開版提供；下方仍可閱讀完整曲目檔案。'}</p>
+      <p>{videoAvailable ? `${film.source}。聲音與播放由你開始；曲目列表可以直接進入歌曲片段。` : '逐曲現場音頻已可在歌曲頁播放；完整演唱會影像暫未於公開版提供。'}</p>
     </div>
     <div className={`film-screen${started ? ' is-started' : ''}`} style={{ '--film-poster': `url("${chapter.cover}")` }}>
       {videoAvailable && <video
@@ -379,7 +398,7 @@ function ConcertFilm({ chapter }) {
       <div className="film-corner film-corner--top">EASON CHAN / {chapter.title}</div>
       <div className="film-corner film-corner--bottom">{Math.floor(film.duration / 3600)}:{pad(Math.floor(film.duration % 3600 / 60))}:{pad(Math.floor(film.duration % 60))} <i /> 1080P <i /> {chapter.year}</div>
     </div>
-    <div className="film-footer"><span>ALBUM ART / OFFICIAL RELEASE</span><p>{!videoAvailable ? '影像公開上線前，曲目和來源資料可正常瀏覽。' : error ? '本機影片無法讀取。請確認原檔仍在 D 盤，或設定對應的 VIDEO_PATH。' : chapter.id === 'duo' ? '此影片是 DUO Disc 1，曲目 29—38 尚無本地影像。' : '下方曲目依正式發行曲序排列。逐曲播放點依這份本地影片建立。'}</p></div>
+    <div className="film-footer"><span>ALBUM ART / OFFICIAL RELEASE</span><p>{!videoAvailable ? '點選下方帶 ▶ 的曲目即可播放對應音頻。' : error ? '本機影片無法讀取。請確認原檔仍在 D 盤，或設定對應的 VIDEO_PATH。' : chapter.id === 'duo' ? '此影片是 DUO Disc 1，曲目 29—38 尚無本地影像。' : '下方曲目依正式發行曲序排列。逐曲播放點依這份本地影片建立。'}</p></div>
   </section>;
 }
 
