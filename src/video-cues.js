@@ -1,4 +1,4 @@
-import { concertVideo, siteAsset, videoAvailable } from './paths.js';
+import { concertVideo, videoAvailable } from './paths.js';
 
 // Film positions are editorial cuts in the user's three locally supplied videos.
 // MOS and DUO are checked against published full-film chapter markers and
@@ -8,6 +8,18 @@ import { concertVideo, siteAsset, videoAvailable } from './paths.js';
 // These are film positions, not generic song durations.
 
 const seconds = (time) => time.split(':').reduce((sum, part) => sum * 60 + Number(part), 0);
+
+// Starts from matching all 38 official album previews to the supplied film.
+// Track 1's preview is 42 seconds into the overture; the overture itself begins at 0.
+const galStarts = [
+  0, 121.582, 471.64, 665.688, 893.429, 1119.596, 1334.284,
+  1571.838, 1786.033, 2019.054, 2322.26, 2622.427, 2916.473,
+  3087.215, 3345.316, 3557.196, 3807.056, 4041.598, 4350.488,
+  4811.97, 5120.842, 5444.246, 5673.107, 5895.755, 6118.408,
+  6382.949, 6604.757, 6860.95, 7194.582, 7405.377, 7680.997,
+  7910.178, 8195.09, 8717.078, 8939.126, 9227.266, 9498.419,
+  9718.134,
+];
 
 const mosStarts = [
   '0:00', '0:45', '4:41', '8:13', '13:11', '17:41', '22:04',
@@ -42,10 +54,17 @@ for (const duration of fndsTrackDurations.slice(0, -1)) {
 const fndsSongEnd = Number((fndsCursor + fndsTrackDurations.at(-1)).toFixed(3));
 
 export const films = {
+  'get-a-life': {
+    url: concertVideo('media/gal-concert.mp4'),
+    duration: 10075.7,
+    clipEnd: 10044.067,
+    label: 'GET A LIFE / HONG KONG 2006',
+    source: 'Get A Life · 用户提供的本地演唱会影片',
+    marks: galStarts,
+  },
   'moving-on-stage': {
     url: concertVideo('media/mos-concert.mp4'),
     duration: 9193.771,
-    poster: siteAsset('assets/mos-stage.jpg'),
     label: 'MOVING ON STAGE 1 / 2007',
     source: 'MOVING ON STAGE 1 · 本地授權影片',
     marks: mosStarts,
@@ -53,7 +72,6 @@ export const films = {
   duo: {
     url: concertVideo('media/duo-concert.mp4'),
     duration: 8759.936,
-    poster: siteAsset('assets/duo-stage.jpg'),
     label: 'DUO / DISC 1 / 2010',
     source: 'DUO Disc 1 · 本地授權影片',
     marks: duoStarts,
@@ -62,7 +80,6 @@ export const films = {
     url: concertVideo('media/fnds-concert.mp4'),
     duration: 8696.011,
     clipEnd: fndsSongEnd,
-    poster: siteAsset('assets/fnds-film-poster.jpg'),
     label: 'FEAR AND DREAMS / HONG KONG 2025',
     source: 'FEAR and DREAMS 香港 2025 · 本地授權影片',
     marks: fndsStarts,
@@ -77,6 +94,7 @@ export function getVideoCue(entry) {
   if (ordinal >= film.marks.length) return null;
   return {
     ...film,
+    poster: entry.chapter.cover,
     start: film.marks[ordinal],
     end: film.marks[ordinal + 1] ?? film.clipEnd ?? film.duration,
     ordinal: ordinal + 1,

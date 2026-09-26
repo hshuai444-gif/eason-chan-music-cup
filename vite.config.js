@@ -64,6 +64,7 @@ function serveConcertVideo(concertFiles, request, response, next) {
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '');
   const concertFiles = {
+    '/media/gal-concert.mp4': env.GAL_VIDEO_PATH,
     '/media/fnds-concert.mp4': env.FNDS_VIDEO_PATH,
     '/media/mos-concert.mp4': env.MOS_VIDEO_PATH,
     '/media/duo-concert.mp4': env.DUO_VIDEO_PATH,

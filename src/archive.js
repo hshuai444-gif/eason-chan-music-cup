@@ -51,7 +51,7 @@ export const chapters = [
     listenUrl: 'https://music.apple.com/us/album/eason-moving-on-stage-1-live/1462045568',
     mediaUrl: 'https://music.apple.com/us/album/eason-moving-on-stage-1-live/1462045568',
     mediaLabel: '查看官方現場專輯',
-    sourceNote: '封面來自 Apple Music；章節主圖擷取自使用者提供的 Moving On Stage 現場影像。',
+    sourceNote: '專輯封面來自 Apple Music；本地現場影片由使用者提供。',
     discs: [
       split('Overture｜白玫瑰｜信心花舍｜K歌之王｜裙下之臣｜富士山下｜不如不見｜夕陽無限好｜人車誌｜馬利奧派對｜最佳損友｜What a Wonderful World｜今日｜黑擇明'),
       split('Dance Mix: Shall We Dance/傷信/幸福摩天輪/美麗有罪/2001太空漫遊/給愛麗斯｜熱島小夜曲｜Crying in the Party｜我不好愛｜打回原形｜衝口而出｜月球上的人｜葡萄成熟時｜浮誇｜低等動物｜粵語殘片'),
@@ -80,7 +80,7 @@ export const chapters = [
     listenUrl: 'https://music.apple.com/us/album/%E9%99%B3%E5%A5%95%E8%BF%852010-duo%E6%BC%94%E5%94%B1%E6%9C%83/1442966677',
     mediaUrl: 'https://music.apple.com/us/album/%E9%99%B3%E5%A5%95%E8%BF%852010-duo%E6%BC%94%E5%94%B1%E6%9C%83/1442966677',
     mediaLabel: '查看官方現場影像',
-    sourceNote: '官方發行封面；章節主圖擷取自使用者提供的 DUO Disc 1 現場影像。',
+    sourceNote: '專輯封面來自 Apple Music；DUO Disc 1 本地影片由使用者提供。',
     discs: [
       split('今天等我來｜好歌獻給你｜落花流水｜囍帖街｜七百年後｜約定｜寂寞夜晚｜浮誇｜禁色｜無人之境｜破曉｜夕陽無限好'),
       split('人車誌｜裙下之臣｜陀飛輪｜沙龍｜葡萄成熟時｜Medley: 熱辣辣/反斗星/頭髮亂了/好戲在後頭｜芳華絕代｜不來也不去｜富士山下｜與我常在｜我的快樂時代'),

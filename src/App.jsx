@@ -212,6 +212,7 @@ function SongFilm({ entry }) {
   const [error, setError] = useState(false);
   const [playing, setPlaying] = useState(false);
   const [elapsed, setElapsed] = useState(0);
+  const [started, setStarted] = useState(false);
   if (!cue) return entry.chapter.id === 'duo' ? <p className="song-film-unavailable">本地影片僅有 DUO Disc 1。這首歌的演出影像尚未包含在提供的原片中。</p> : null;
   if (!cue.available) return <p className="song-film-unavailable">這首歌的演出影像暫未於公開版提供。<a href={entry.chapter.mediaUrl} target="_blank" rel="noreferrer">查看發行來源 <Arrow diagonal /></a></p>;
 
@@ -225,6 +226,7 @@ function SongFilm({ entry }) {
       video.currentTime = cue.start;
       setElapsed(0);
     }
+    setStarted(true);
     video.play().catch(() => setError(true));
   };
 
@@ -248,6 +250,7 @@ function SongFilm({ entry }) {
         }}
         onError={() => setError(true)}
       />
+      {!started && <img className="song-film-cover" src={entry.chapter.cover} alt={`${entry.chapter.edition} 專輯封面`} />}
       {!playing && <button className="song-film-overlay-play" type="button" onClick={togglePlayback} aria-label={`播放 ${entry.title} 現場片段`}>▶</button>}
       <div className="song-film-controls">
         <button type="button" onClick={togglePlayback} aria-label={playing ? '暫停片段' : '播放片段'}>{playing ? 'Ⅱ' : '▶'}</button>
@@ -359,14 +362,14 @@ function ConcertFilm({ chapter }) {
       <h3 id={`${chapter.id}-film-title`}>{chapter.title === 'FEAR AND DREAMS' ? <>Fear becomes<br /><em>Dreams.</em></> : chapter.title}</h3>
       <p>{videoAvailable ? `${film.source}。聲音與播放由你開始；曲目列表可以直接進入歌曲片段。` : '這部演唱會影像暫未於公開版提供；下方仍可閱讀完整曲目檔案。'}</p>
     </div>
-    <div className={`film-screen${started ? ' is-started' : ''}`} style={{ '--film-poster': `url("${film.poster}")` }}>
+    <div className={`film-screen${started ? ' is-started' : ''}`} style={{ '--film-poster': `url("${chapter.cover}")` }}>
       {videoAvailable && <video
         ref={videoRef}
         aria-label={`${chapter.title} 演唱會影像`}
         controls={started}
         playsInline
         preload="none"
-        poster={film.poster}
+        poster={chapter.cover}
         src={film.url}
         onError={() => setError(true)}
       />}
@@ -375,14 +378,62 @@ function ConcertFilm({ chapter }) {
       <div className="film-corner film-corner--top">EASON CHAN / {chapter.title}</div>
       <div className="film-corner film-corner--bottom">{Math.floor(film.duration / 3600)}:{pad(Math.floor(film.duration % 3600 / 60))}:{pad(Math.floor(film.duration % 60))} <i /> 1080P <i /> {chapter.year}</div>
     </div>
-    <div className="film-footer"><span>FILM FRAME FROM THE LICENSED CONCERT VIDEO</span><p>{!videoAvailable ? '影像公開上線前，曲目和來源資料可正常瀏覽。' : error ? '本機影片無法讀取。請確認原檔仍在 D 盤，或設定對應的 VIDEO_PATH。' : chapter.id === 'duo' ? '此影片是 DUO Disc 1，曲目 29—38 尚無本地影像。' : '下方曲目依正式發行曲序排列。逐曲播放點依這份本地影片建立。'}</p></div>
+    <div className="film-footer"><span>ALBUM ART / OFFICIAL RELEASE</span><p>{!videoAvailable ? '影像公開上線前，曲目和來源資料可正常瀏覽。' : error ? '本機影片無法讀取。請確認原檔仍在 D 盤，或設定對應的 VIDEO_PATH。' : chapter.id === 'duo' ? '此影片是 DUO Disc 1，曲目 29—38 尚無本地影像。' : '下方曲目依正式發行曲序排列。逐曲播放點依這份本地影片建立。'}</p></div>
   </section>;
+}
+
+function ChapterPrelude({ chapter }) {
+  const audioRef = useRef(null);
+  const areaRef = useRef(null);
+  const [playing, setPlaying] = useState(false);
+  const [audioError, setAudioError] = useState(false);
+  const enter = () => {
+    audioRef.current?.pause();
+    const behavior = window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth';
+    document.getElementById(`${chapter.id}-record`)?.scrollIntoView({ behavior, block: 'start' });
+  };
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => {
+      if (!entry.isIntersecting && audioRef.current && !audioRef.current.paused) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    }, { threshold: 0.1 });
+    if (areaRef.current) observer.observe(areaRef.current);
+    return () => { observer.disconnect(); audioRef.current?.pause(); };
+  }, []);
+
+  const toggle = async () => {
+    const audio = audioRef.current;
+    if (!audio) return;
+    if (!audio.paused) { audio.pause(); return; }
+    try { await audio.play(); }
+    catch { setAudioError(true); }
+  };
+
+  return <div className="chapter-prelude" ref={areaRef} aria-labelledby={`${chapter.id}-prelude-title`}>
+    <audio ref={audioRef} src={siteAsset(`audio/${chapter.id}.m4a`)} preload="none" onPlay={() => setPlaying(true)} onPause={() => setPlaying(false)} onEnded={enter} onError={() => setAudioError(true)} />
+    <div className="prelude-art"><img src={chapter.cover} alt={`${chapter.edition} 專輯封面`} loading={chapter.index === '01' ? 'eager' : 'lazy'} /></div>
+    <div className="prelude-content">
+      <span className="prelude-eyebrow">PRELUDE / CHAPTER {chapter.index} / {chapter.year}</span>
+      <h2 id={`${chapter.id}-prelude-title`}>{chapter.title}</h2>
+      <p>一段為本章創作的管弦氛圍序曲。按下播放，讓音樂帶你進入現場。</p>
+      <div className="prelude-actions">
+        <button type="button" onClick={toggle} disabled={audioError}>{audioError ? '音樂暫不可用' : playing ? '暫停序曲 Ⅱ' : '播放序曲 · 進入本章 ▶'}</button>
+        <button type="button" onClick={enter}>直接進入 ↗</button>
+      </div>
+      <span className="prelude-caption">ORIGINAL INSTRUMENTAL / 11 SECONDS</span>
+    </div>
+  </div>;
 }
 
 function Chapter({ chapter, onSources, onSong }) {
   return <section id={chapter.id} className={`chapter chapter--${chapter.theme}`} aria-labelledby={`${chapter.id}-title`}>
-    <div className="chapter-cover">
+    <ChapterPrelude chapter={chapter} />
+    <div className="chapter-cover" id={`${chapter.id}-record`}>
       <div className="chapter-scene" style={{ '--scene-image': `url("${chapter.backdrop}")` }}>
+        <img className="chapter-scene-album" src={chapter.cover} alt="" loading="lazy" />
         <div className="chapter-scene-inner">
           <div className="chapter-number" data-reveal>{chapter.index}</div>
           <div className="chapter-type" data-reveal>
@@ -392,7 +443,7 @@ function Chapter({ chapter, onSources, onSong }) {
             <span className="chapter-feature">{chapter.feature}</span>
             <button className="text-link" type="button" onClick={() => onSources(chapter)}>VIEW SOURCES <Arrow diagonal /></button>
           </div>
-          <span className="chapter-scene-caption">{chapter.id === 'moving-on-stage' || chapter.id === 'duo' ? 'FRAME FROM THE LICENSED CONCERT FILM' : 'ORIGINAL ABSTRACT LIGHT FIELD / NOT CONCERT FOOTAGE'}</span>
+          <span className="chapter-scene-caption">ALBUM ART / {chapter.edition}</span>
           <span className="chapter-scene-scroll">SCROLL TO EXPLORE ↓</span>
         </div>
       </div>

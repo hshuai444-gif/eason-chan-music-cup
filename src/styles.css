@@ -75,27 +75,47 @@ a:hover .arrow, button:hover .arrow { transform: translate(3px,-2px); }
 .chapter--duo { --chapter-bg: #111921; --chapter-accent: #9eb8cb; }
 .chapter--life { --chapter-bg: #191a11; --chapter-accent: #cfaa66; }
 .chapter--fear { --chapter-bg: #101722; --chapter-accent: #ddae78; }
+.chapter-prelude { position: relative; display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr); align-items: center; gap: 7vw; min-height: 100svh; padding: 105px 7vw 65px; overflow: hidden; background: radial-gradient(circle at 72% 45%,color-mix(in srgb,var(--chapter-accent) 22%,transparent),transparent 38%),var(--chapter-bg); border-bottom: 1px solid rgba(242,240,233,.2); }
+.chapter-prelude::before { content: ''; position: absolute; inset: 6% 5%; border: 1px solid rgba(242,240,233,.13); pointer-events: none; }
+.prelude-art { position: relative; z-index: 1; width: min(100%,67svh); aspect-ratio: 1; justify-self: center; padding: clamp(8px,1.4vw,20px); border: 1px solid rgba(242,240,233,.24); box-shadow: 0 35px 100px rgba(0,0,0,.5); transform: rotate(-2deg); }
+.prelude-art::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(242,240,233,.32); pointer-events: none; }
+.prelude-art img { display: block; width: 100%; height: 100%; object-fit: cover; background: rgba(255,255,255,.08); }
+.prelude-content { position: relative; z-index: 1; align-self: center; max-width: 680px; }
+.prelude-eyebrow, .prelude-caption { display: block; color: var(--chapter-accent); font: 500 10px/1.6 var(--mono); letter-spacing: .2em; }
+.chapter .chapter-prelude h2 { margin: 30px 0 28px; max-width: none; font: 650 clamp(68px,8vw,130px)/.85 var(--display); letter-spacing: -.02em; overflow-wrap: anywhere; }
+.prelude-content p { max-width: 470px; margin: 0; color: #ddd9d2; font: 400 clamp(18px,1.55vw,25px)/1.7 var(--serif); }
+.prelude-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 22px; margin: 44px 0 43px; }
+.prelude-actions button { min-height: 47px; padding: 13px 17px; border: 1px solid var(--chapter-accent); background: var(--chapter-accent); color: #111; cursor: pointer; font: 600 11px/1.4 var(--mono); letter-spacing: .1em; transition: transform .2s,background .2s; }
+.prelude-actions button:hover { transform: translateY(-3px); }
+.prelude-actions button:disabled { opacity: .6; cursor: not-allowed; }
+.prelude-actions button + button { background: transparent; color: var(--paper); border-color: rgba(242,240,233,.5); }
+.prelude-caption { color: rgba(242,240,233,.58); font-size: 9px; }
 .chapter-cover { position: relative; height: 150svh; }
 .chapter-scene { position: sticky; top: 0; height: 100svh; overflow: hidden; background-image: var(--scene-image); background-size: cover; background-position: center; }
+.chapter-scene::before { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg,rgba(8,8,10,.79),rgba(8,8,10,.2) 78%),rgba(8,8,10,.25); }
 .chapter-scene::after { content: ''; position: absolute; inset: auto 0 0; height: 17%; pointer-events: none; background: linear-gradient(to bottom, transparent, var(--chapter-bg)); }
-.chapter-scene-inner { position: relative; height: 100%; padding: 100px 5.8vw 9vh; }
+.chapter-scene-album { position: absolute; right: 5.8vw; top: 50%; width: min(53svh,40vw); aspect-ratio: 1; object-fit: cover; transform: translateY(-50%) rotate(2deg); border: 12px solid rgba(242,240,233,.09); box-shadow: 0 30px 100px rgba(0,0,0,.5); }
+.chapter-scene-inner { position: relative; z-index: 1; height: 100%; padding: 100px 5.8vw 9vh; }
 .chapter-number { font: 300 clamp(28px,3vw,48px)/1 var(--display); letter-spacing: .06em; }
 .chapter-type { position: absolute; left: 5.8vw; bottom: 15vh; max-width: min(78vw,1200px); }
 .chapter-overline { display: block; margin-bottom: 24px; font: 500 11px/1.5 var(--mono); letter-spacing: .24em; }
 .chapter h2 { margin: 0; max-width: 1200px; font: 700 clamp(96px,13.5vw,220px)/.75 var(--display); letter-spacing: -.025em; }
 .chapter--get h2 { max-width: 710px; }
-.chapter--mos h2 { max-width: 950px; font-size: clamp(90px,12vw,190px); }
-.chapter--life h2 { max-width: 790px; }
-.chapter--fear h2 { max-width: 980px; }
+.chapter--mos .chapter-type { max-width: min(55vw,760px); }
+.chapter--mos .chapter-scene h2 { max-width: 720px; font-size: clamp(77px,8.5vw,137px); }
+.chapter--life .chapter-type { max-width: min(54vw,730px); }
+.chapter--life .chapter-scene h2 { max-width: 700px; font-size: clamp(80px,9vw,143px); }
+.chapter--fear .chapter-type { max-width: min(54vw,730px); }
+.chapter--fear .chapter-scene h2 { max-width: 720px; font-size: clamp(80px,9vw,145px); }
 .chapter-title-rule { width: min(34vw,420px); height: 1px; margin: 26px 0 22px; background: var(--paper); }
 .chapter-feature { display: block; margin-bottom: 26px; font: 400 clamp(24px,2.5vw,44px)/1.45 var(--serif); letter-spacing: .08em; }
 .text-link { display: inline-flex; gap: 24px; align-items: center; padding: 9px 0 10px; border: 0; border-bottom: 1px solid var(--paper); background: none; color: var(--paper); cursor: pointer; font: 500 11px/1.2 var(--mono); letter-spacing: .24em; }
 .chapter-scene-caption, .chapter-scene-scroll { position: absolute; bottom: 4.2vh; font: 400 9px/1.3 var(--mono); letter-spacing: .12em; color: rgba(242,240,233,.63); }
 .chapter-scene-caption { left: 5.8vw; }
 .chapter-scene-scroll { right: 5.8vw; }
-.chapter--duo .chapter-type { left: 50%; transform: translateX(-50%); width: 520px; text-align: center; }
-.chapter--duo .chapter-title-rule { margin-left: auto; margin-right: auto; }
-.chapter--duo h2 { font-size: clamp(150px,23vw,350px); }
+.chapter--duo .chapter-type { left: 5.8vw; width: 520px; text-align: left; }
+.chapter--duo .chapter-title-rule { margin-left: 0; margin-right: 0; }
+.chapter--duo .chapter-scene h2 { font-size: clamp(150px,19vw,280px); }
 
 .chapter-body { position: relative; z-index: 2; background: var(--chapter-bg); }
 .chapter-statement { display: grid; grid-template-columns: 1fr 2.2fr; gap: 7vw; padding: 160px 8vw 180px 5.8vw; border-bottom: 1px solid var(--hairline); }
@@ -230,9 +250,10 @@ a:hover .arrow, button:hover .arrow { transform: translate(3px,-2px); }
 .song-film-heading span:last-child { text-align: right; }
 .song-film-frame { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #05070c; border: 1px solid rgba(242,240,233,.34); }
 .song-film video { display: block; width: 100%; height: 100%; object-fit: contain; }
-.song-film-overlay-play { position: absolute; top: 50%; left: 50%; display: grid; place-items: center; width: 66px; height: 66px; padding-left: 4px; border: 1px solid rgba(255,255,255,.9); border-radius: 50%; background: rgba(5,7,12,.44); color: #fff; transform: translate(-50%,-50%); cursor: pointer; font-size: 22px; }
+.song-film-cover { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #05070c; }
+.song-film-overlay-play { position: absolute; z-index: 2; top: 50%; left: 50%; display: grid; place-items: center; width: 66px; height: 66px; padding-left: 4px; border: 1px solid rgba(255,255,255,.9); border-radius: 50%; background: rgba(5,7,12,.44); color: #fff; transform: translate(-50%,-50%); cursor: pointer; font-size: 22px; }
 .song-film-overlay-play:hover { background: rgba(5,7,12,.75); }
-.song-film-controls { position: absolute; right: 0; bottom: 0; left: 0; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; background: linear-gradient(transparent,rgba(0,0,0,.82)); color: #fff; font: 500 10px/1 var(--mono); }
+.song-film-controls { position: absolute; z-index: 2; right: 0; bottom: 0; left: 0; display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 8px 12px; background: linear-gradient(transparent,rgba(0,0,0,.82)); color: #fff; font: 500 10px/1 var(--mono); }
 .song-film-controls button { flex: none; display: grid; place-items: center; min-width: 23px; height: 28px; padding: 0; border: 0; background: none; color: inherit; cursor: pointer; font: 600 18px/1 var(--mono); }
 .song-film-controls input { flex: 1; min-width: 15px; height: 14px; accent-color: var(--lyrics-accent); cursor: pointer; }
 .song-film-frame:fullscreen { display: flex; align-items: center; justify-content: center; background: #000; }
@@ -265,8 +286,6 @@ a:hover .arrow, button:hover .arrow { transform: translate(3px,-2px); }
 
 [data-reveal] { opacity: 0; transform: translateY(30px); transition: opacity .85s ease, transform .85s cubic-bezier(.18,.7,.2,1); }
 [data-reveal].is-visible { opacity: 1; transform: none; }
-.chapter--duo .chapter-type[data-reveal] { transform: translate(-50%,30px); }
-.chapter--duo .chapter-type[data-reveal].is-visible { transform: translateX(-50%); }
 
 @media (max-width: 1100px) {
   .header-center { display: none; }
@@ -274,6 +293,7 @@ a:hover .arrow, button:hover .arrow { transform: translate(3px,-2px); }
   .opening h1 { font-size: clamp(92px,13.5vw,170px); }
   .chapter h2 { font-size: clamp(82px,13vw,155px); }
   .chapter--duo h2 { font-size: clamp(150px,23vw,270px); }
+  .chapter-scene-album { right: 3vw; width: 46vw; }
   .artifact { padding-left: 7vw; padding-right: 7vw; }
 }
 
@@ -300,19 +320,29 @@ a:hover .arrow, button:hover .arrow { transform: translate(3px,-2px); }
   .opening-timeline a i { top: -18px; width: 9px; height: 9px; }
   .opening-timeline a:nth-child(n+3) i { display: none; }
   .opening-timeline span { font-size: 9px; }
+  .chapter-prelude { grid-template-columns: 1fr; gap: 24px; align-content: center; min-height: 100svh; padding: 92px 28px 35px; }
+  .chapter-prelude::before { inset: 3% 4%; }
+  .prelude-art { width: min(58vw,32svh); padding: 8px; }
+  .prelude-content { width: 100%; }
+  .chapter .chapter-prelude h2 { margin: 20px 0 14px; font-size: clamp(57px,13vw,90px); }
+  .prelude-content p { font-size: 16px; }
+  .prelude-actions { gap: 11px; margin: 24px 0; }
+  .prelude-actions button { font-size: 9px; min-height: 42px; padding: 10px 12px; }
+  .prelude-caption { font-size: 8px; }
   .chapter-cover { height: 124svh; }
   .chapter-scene { background-position: center; }
+  .chapter-scene::before { background: linear-gradient(0deg,rgba(8,8,10,.88),rgba(8,8,10,.1) 85%); }
+  .chapter-scene-album { right: 50%; top: 34%; width: min(63vw,43svh); border-width: 7px; transform: translate(50%,-50%) rotate(2deg); }
   .chapter-scene-inner { padding: 92px 23px 7vh; }
   .chapter-number { font-size: 32px; }
   .chapter-type, .chapter--duo .chapter-type { left: 23px; right: 23px; bottom: 14vh; width: auto; max-width: none; text-align: left; transform: none; }
-  .chapter--duo .chapter-type[data-reveal] { transform: translateY(30px); }
-  .chapter--duo .chapter-type[data-reveal].is-visible { transform: none; }
   .chapter-overline { font-size: 9px; margin-bottom: 17px; }
   .chapter h2 { font-size: clamp(82px,21vw,160px); }
   .chapter--duo h2 { font-size: clamp(160px,41vw,270px); }
   .chapter--get h2 { max-width: 330px; }
-  .chapter--life h2 { max-width: 350px; }
-  .chapter--fear h2 { max-width: 410px; font-size: clamp(77px,18vw,130px); }
+  .chapter--mos .chapter-type, .chapter--life .chapter-type, .chapter--fear .chapter-type { max-width: none; }
+  .chapter--mos .chapter-scene h2, .chapter--life .chapter-scene h2 { max-width: 100%; font-size: clamp(82px,19vw,145px); }
+  .chapter--fear .chapter-scene h2 { max-width: 410px; font-size: clamp(77px,18vw,130px); }
   .chapter--duo .chapter-title-rule { margin-left: 0; margin-right: 0; }
   .chapter-title-rule { width: 64vw; margin: 21px 0 18px; }
   .chapter-feature { font-size: 25px; margin-bottom: 20px; }
@@ -398,6 +428,4 @@ a:hover .arrow, button:hover .arrow { transform: translate(3px,-2px); }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
   [data-reveal] { opacity: 1; transform: none; }
-  .chapter--duo .chapter-type[data-reveal] { transform: translateX(-50%); }
-  @media (max-width: 760px) { .chapter--duo .chapter-type[data-reveal] { transform: none; } }
 }
