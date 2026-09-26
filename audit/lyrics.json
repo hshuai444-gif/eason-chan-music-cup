@@ -1,10 +1,10 @@
 {
   "summary": {
     "totalEntries": 161,
-    "withStudioReference": 121,
+    "withStudioReference": 123,
     "awaitingReview": 4,
-    "missing": 36,
-    "uniqueReferenceTitles": 91
+    "missing": 34,
+    "uniqueReferenceTitles": 93
   },
   "songs": [
     {
@@ -107,9 +107,9 @@
       "id": "get-a-life-d2-t2",
       "chapter": "get-a-life",
       "title": "聽聽",
-      "status": "missing",
-      "sourceAlbum": null,
-      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+      "status": "reference",
+      "sourceAlbum": "怎麼樣",
+      "reason": null
     },
     {
       "id": "get-a-life-d2-t3",
@@ -1067,9 +1067,9 @@
       "id": "fear-and-dreams-d1-t3",
       "chapter": "fear-and-dreams",
       "title": "人神鬥",
-      "status": "missing",
-      "sourceAlbum": null,
-      "reason": "未找到与歌手、专辑和时长一致的可用歌词"
+      "status": "reference",
+      "sourceAlbum": "怎麼樣",
+      "reason": null
     },
     {
       "id": "fear-and-dreams-d1-t4",
